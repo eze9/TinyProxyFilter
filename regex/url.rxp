@@ -1,0 +1,7 @@
+.*mid
+.*swf
+.*aspx
+.*pop.*.js
+.*/.*jsc.*/.*
+.*inject.*.js
+.*/.*banner.*/.*
