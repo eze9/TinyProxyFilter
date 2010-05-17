@@ -1,1 +1,31 @@
 Not a even stable yet
+
+The script loads config form the regex folder and then compares the url
+domain content and content-type to decide what to do with it
+
+Eg: You want to blacklist a publicity website that is poping some anoying
+windows there are 3 ways to remove that content from the page.
+
+1.- Domain based blacklist
+	to do this you just need a regular expression to blacklist that domain.
+	lets say we want to blacklist www.adbucks.com, to do this we will edit
+	the domain.rxp file on the regex folder and add
+
+	.*adbucks.*
+
+	This of course will block all connections from adbucks
+
+2.-	Url based blacklist
+	This is the second method to blacklist we follow the previous procedure
+	but instead we edit url.rxp, lets pretend we want to browse a website
+	that has some really anoying javascript but we dont need to blacklist
+	them all eg: http://www.somesite.com/path/to/ads/anoying.js
+
+	http://www.somesite.com/path/to/ads/anoying.js
+	or
+	.*/ads/.*.js
+	or
+	*.js
+	and so on
+
+3.- Not working properly yet
